@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <title>Edu-Book Library</title>
+</head>
+<body>
+    <div class="container-fluid  back-color">
+        <div class="container">
+
+            <div class="topnav  " id="myTopnav">
+                <div class="d-flex">  
+                <a href="../index.html" class="active">EDu-LIBRARY</a>
+                <img src="../images/local_library-white-18dp.svg " alt="library logo" class="active" style="width:3%">           
+            <a href="#about">About Us</a>                     
+                <a href="javascript:void(0);" class="icon" onclick="onReduce()">
+                  <i class="fa fa-bars"></i>
+                </a>   
+              </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center wrapper">
+
+            <form class="form-wrap" id="myform" action="./login.html" >
+                <h6  >SIGNUP</h6>
+                <h6>Please fill in to Register </h6>
+                <hr>
+
+                <select id="myrole"class="formInput"  name="role">
+                    <option value="disabled">Role</option>
+                    <option value="Student">student</option>
+                    <option value="LF">LF</option>
+                    <option value="Edu-Staff">Edu-Staff</option>
+                  </select>
+
+                <input class="formInput" id="name" type="text" minlength="3" placeholder="Names"required >
+                <input class="formInput" id="email" type="email" pattern="[^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$]" placeholder="Email" required>
+               <input class="formInput" id="pswd" type="password" minlength="8"  placeholder="Password:" required>  
+                <div class="d-flex justify-content-center pt-2 pb-2">
+                    <button class="auth-button" type="submit"onsubmit="return formValidation();" >SIGNUP</button>
+                </div>
+                <span> Already have an Account? <a href="./login.html" id="show-login"> Login </a></span>
+            </form>
+
+            <div id="foresult" style="color: red;"></div>
+        </div>
+        <footer class="container-fluid text-center">
+            <p>Follow <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+            </p>
+    </footer>
+    </div>
+    </div>
+    <script src="../assets/js/app.js">
+    </script>
+</body>
+</html>
