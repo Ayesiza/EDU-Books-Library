@@ -7,47 +7,7 @@ body {
 .wrapper{
    background-color:  #A6B1E1;
 }
-/* navigation bar css */
- .topnav {
-  overflow: hidden;
-  background-color: #1C1A89;  
-}
 
-.topnav a {
-  float: left;
-  display: block;
-  color:#EBE4F8;
-  text-align: center;
-  padding: 2px 10px;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-} 
-
-  .topnav .right-link {
-  float: right;
-}  
-
- @media screen and (max-width: 600px) {
-  .topnav .right-link {
-    float: none;
-  }
-  .topnav .right-link  {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  
-} 
-/* ### navigation bar ends */
  h4 {
     color: #1C1A89;
     font-weight: bolder;
@@ -80,8 +40,132 @@ p{
      border-radius: 5px;
      border: hidden;
      font-size: larger;
+     cursor: pointer;
+  }
+
+  .blue-btn:hover{
+    background-color:rgb(2, 2, 75);
+     color:#EBE4F8;
   }
 
   img {
     width:50%;  
   }
+  /* navigation bar css */
+  .topnav {
+    overflow: hidden;
+    background-color: #1C1A89;
+  }
+  
+  .topnav a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #719CC4;
+    color: #1C1A89;
+    text-decoration: none;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  /* ### navigation bar ends */
+  /* signup form */
+  .form-wrap {
+    margin: 20px;
+    width: 350px;
+    height: auto;
+    padding: 30px;
+    background-color: #EFF6F8;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 8px #0035422a;
+  }
+  @media screen and (max-width: 600px) {
+    .form-wrap form {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+  .formInput {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #C9D2F7;
+    margin: 3px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 2px 2px  #b79dc4;
+  }
+
+  .auth-button {
+    background-color:#1C1A89;
+    color:#EBE4F8;
+    margin: 5px 0;
+    border:hidden;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius:5px ;
+  }
+    
+  .auth-button:hover {
+    background:  #C9D2F7;
+    color: #1C1A89;
+  }
+
+  h6{
+    color: #1C1A89;
+    text-align: center;
+  }
+
+  form a {
+      color: #1C1A89;
+      text-decoration: none;
+      background-color: transparent;
+  }
+  form span {
+    color:#FD0404;
+  }
+hr {
+  color: #1C1A89;
+}
+::placeholder{
+  color: #000000;
+}
+.pwd-reset{
+  color: #1C1A89;
+  font-style: italic;
+  margin-top: 5px;
+}
+  /* signup form ends */
+  
