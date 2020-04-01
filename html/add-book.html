@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edu-Book Library</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="">
+    <div class="container-fluid back-color">
+      <div class="container col-md-8 shadow wrapper ">
+        
+        <div class="topnav" id="myTopnav">
+          <div class="d-flex">
+            <a href="../index.html">EDu-LIBRARY</a>
+            <img
+              src="../images/local_library-white-18dp.svg "
+              alt="library logo"
+              class="active"
+              style="width:3%"
+            />
+            <a href="#about"></a>
+            <a href="#about">Books</a>
+            <a href="./login.html">Logout</a>
+            <a href="javascript:void(0);" class="icon" onclick="onReduce()">
+              <i class="fa fa-bars"></i>
+            </a>
+          
+        </div>
+        </div>
+        <div class="container wrapper">
+        <div >
+          <input type="text"class="form-control mt-4" placeholder="Search for a book..."  />
+        </div>
+
+        <div class="container  ">
+         
+          <h4 class="title ">EDu Books list</h4>
+          <ul id="books" class="list-group">
+            <li class="list-group-item">
+              React Components
+              <button class="delete-button btn-sm float-right delete">
+                Delete
+              </button>
+            </li>
+            <li class="list-group-item">
+              Mockups
+              <button class="delete-button btn-sm float-right delete">
+                Delete
+              </button>
+            </li>
+            <li class="list-group-item">
+              Sequalize
+              <button class="delete-button btn-sm float-right delete">
+                Delete
+              </button>
+            </li>
+            <li class="list-group-item">
+              Project Management control
+              <button class="delete-button btn-sm float-right delete">
+                Delete
+              </button>
+            </li>
+          </ul>
+          <form id="addForm" class=" mt-4 d-flex w-100 justify-content-between " >
+            <input type="text" class="form-control " id="item" />
+            <input type="submit"class="delete-button "value="Add"/>
+          </form>
+        </div>
+      </div>
+    </div  >
+   
+  </div>
+    </div>
+    <script src="../assets/js/add.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
