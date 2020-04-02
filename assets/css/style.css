@@ -2,6 +2,12 @@
 body {
   margin: 0;
   font-family: Tahoma;
+  
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+  background-color:#719CC4;
 }
 
 .wrapper{
@@ -49,7 +55,7 @@ p{
   }
 
   img {
-    width:50%;  
+   width: 100% ;  
   }
   /* navigation bar css */
   .topnav {
@@ -196,3 +202,25 @@ hr {
   border-radius: 5px;  
   }
   
+  .add-button{
+    background-color:#1C1A89;
+    color:#EBE4F8;
+    margin: 0px 0;
+    border:hidden;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 7px 30px;
+    border-radius:2px ;
+  }
+  /* dasshboard */
+  .content {
+    background-color:#C4C4C4;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  .row,
+        .row > .column {
+          padding: 10px;
+        }
+        
+        

@@ -1,8 +1,6 @@
 const form = document.getElementById('addForm');
 const itemList = document.getElementById('books');
 
-
-
 form.addEventListener('submit', addItem);
 itemList.addEventListener('click', removeItem);
 
@@ -21,7 +19,7 @@ function addItem(e){
    
   li.appendChild(deleteBtn);
   itemList.appendChild(li);
-}
+};
 
 function removeItem(event){
   if(event.target.classList.contains('delete')){
@@ -30,4 +28,6 @@ function removeItem(event){
       itemList.removeChild(li);
     }
   }
-}
+};
+
+

@@ -27,4 +27,9 @@ const users = [
     if(user.role === 'edustaff' && user.password === password){
         window.location.replace('./dashboad.html')
     }
+
   });
+
+
+
+  

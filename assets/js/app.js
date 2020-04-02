@@ -1,8 +1,13 @@
  onReduce = ()=> {
-  let x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+  
+    let navBar = document.getElementById("myTopnav");
+    if (navBar.className === "topnav") {
+      navBarclassName += " responsive";
+    } else {
+      navBar.className = "topnav";
+    }
+  };
+
+
+
+
