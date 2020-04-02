@@ -6,12 +6,11 @@ const users = [
   ];
 
   document.getElementById("myrole").addEventListener("submit", event => {
-    // stop page from refreshing
     event.preventDefault();
-    // get values from the form
+    
     const name = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    // check all fields first
+    
     const user = users.find(user => user.email === name)
     if(!user){
         document.getElementById("helper-text").innerHTML = "Invalid email";
@@ -20,12 +19,17 @@ const users = [
         document.getElementById("helper-text").innerHTML = "Invalid password";
     }
     if(user.role === 'LF' && user.password === password){
-        window.location.replace('index.html')
+        window.location.replace('./add-book.html')
     }
     if(user.role === 'student' && user.password === password){
-        window.location.replace('./student.html')
+        window.location.replace('./dashboad.html')
     }
     if(user.role === 'edustaff' && user.password === password){
-        window.location.replace('./admin.html')
+        window.location.replace('./dashboad.html')
     }
+
   });
+
+
+
+  
