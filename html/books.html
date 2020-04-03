@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  
+    <title>Document</title>
+   
+</head>
+<body class="back-color">  
+    <div class="main">
+          
+        <div class="topnav  " id="myTopnav">
+            <div class="d-flex">  
+            <a href="../index.html" >EDu-LIBRARY</a>
+            <img src="../images/local_library-white-18dp.svg " alt="library logo" class="active" style="width:3%">           
+            <a href="#about"></a>  
+            <a href="#about">About Us</a>
+            <a href="#about"></a>  
+            <a href="./login.html">Login</a>                  
+            <a href="javascript:void(0);" class="icon" onclick="onReduce()">
+              <i class="fa fa-bars"></i>
+            </a>   
+          </div>
+    </div>
+    <div class="ml-4 mb-2">
+        <h4>EDU-Books</h4>
+        </div >
+          
+            <div class="search mt-2 mb-2">
+          <form id="search-books"class="search "  style="margin:auto;max-width:300px">
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          </div>
+        <div >
+          <button class="btn active ml-4"> Show all Books</button>
+          <button class="btn"> Technology</button>
+          <button class="btn" >Mathematics</button>
+          <button class="btn">Science</button>
+        </div>
+    <div class="container p-4">
+        <div class="container p-4">
+            <div class="container p-4">
+        <div class="row ">
+            <div class="col-sm-4 mb-3">
+            <div class=" card">
+              <img class="img-fluid"src="../images/book1.jpg" alt="technology book1">
+              <h6>Technology</h6>
+              <button id="myBtn" class="mode-button">Borrow</button>
+            </div>
+          </div>
+          <div class="col-sm-4 mb-3">
+            <div class="card">
+              <img class="img-fluid" src="../images/realistic-book-cover-presentation_1310-23.jpg" alt="candle booK" >
+              <h6>Mathematics</h6>
+              <button id="myBtn"class="mode-button">Borrow</button>
+              </div>
+          </div>
+         
+          <div class="col-sm-4 mb-3">
+            <div class="card">
+            <img src="../images/images (4).jpg" alt="technology book1" >
+            <h6>Science</h6>
+            <button id="myBtn"class="mode-button">Borrow</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 mb-3">
+              <div class="card">
+                  <img class="img-fluid"src="../images/realistic-book-cover-presentation_1310-23.jpg" alt="realistic-book" >
+                  <h6>Technology</h6>
+                  <button id="myBtn"class="mode-button">Borrow</button>
+                </div>
+            </div>
+                
+            <div class="col-sm-4 mb-3">
+              <div class="card">
+                <img class="img-fluid" src="../images/candle.jpg" alt="candle booK" >
+                <h6>Mathematics</h6>
+                <button id="myBtn"class="mode-button">Borrow</button>
+                </div>
+            </div>
+                
+            <div class="col-sm-4 mb-3">
+              <div class=" card">
+                <img class="img-fluid"src="../images/book1.jpg" alt="technology book1">
+                <button id="myBtn"class="mode-button">Borrow</button>
+                <h6>Science</h6>
+              </div>
+            </div>
+           
+            </div> 
+            <div class="row">
+                <div class="col-sm-4 mb-3">
+                  <div class="card">
+                  <img  class="img-fluid"src="../images/images (4).jpg" alt="Science" >
+                  <h6>Technology</h6>
+                  <button id="myBtn"class="mode-button">Borrow</button>
+                 
+                </div>
+              </div>
+              <div class="col-sm-4 mb-3">
+                <div class="card">
+                <img class="img-fluid" src="../images/book-cover-mocku_23-2148131393.jpg" alt="book-cover-mockup" >
+                <h6>Mathematics</h6>
+                <button id="myBtn"class="mode-button">Borrow</button>
+                </div>
+              </div>
+              <div class="col-sm-4 mb-3">
+                <div class="card">
+                <img class="img-fluid" src="../images/images (4).jpg" alt="Science" >
+                <h6>Science</h6>
+                <button id="myBtn"class="mode-button">Borrow</button>
+                 </div>
+              </div>       
+            </div>        
+        </div>
+    </div>
+</div>
+<div id="myModal" class="modal">
+
+  <div class="container ">
+    <div class="modal-content col-md-8">
+    <span class="close">&times;</span>
+    <div class="row">
+    <div class="col-sm-6 ">
+        <div class="card ">
+            <img class="img-fluid"src="../images/book1.jpg" alt="technology book1">
+        
+        </div>
+      </div>
+      
+      <div class="col-sm-6 ">
+          <div class="card ">
+          <div class="">
+            <span class="text-warning">BOOK</span>
+            <span class=""> MOCKUP</span>
+          
+          <hr>
+          <span class="">AUTHOR</span>
+            <span class=""> Nick Frost</span>
+          
+          <hr>
+          <h6 class="ml-4 text-body"> <i>Description:</i> Book Mockup is the best book for all mockup technics </h6>
+        </div>
+          <div class="container d-flex mb-3 mt-2 justify-content-center">
+            <button class=" auth-button blinking "> Available</button>
+            
+            </div>
+          </div>
+          </div>
+        
+  </div>
+</div>
+</div>
+<script src="../assets/js/books.js">
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

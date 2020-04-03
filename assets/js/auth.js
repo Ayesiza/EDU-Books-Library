@@ -8,7 +8,7 @@ document.getElementById('myform').addEventListener("submit", event => {
   
   if (name.length < 1 )  {
     document.getElementById('helper-text').innerHTML =
-      "All fields are required";
+      "All fields are required ";
   }
   if (email.length < 4 ) {
     document.getElementById('helper-text').innerHTML =
@@ -19,8 +19,22 @@ document.getElementById('myform').addEventListener("submit", event => {
      "Password must contain at least one uppercase letter (A-Z)!";
   } 
   else {
-    window.location.replace("./login.html");
+    window.location.replace("./books.html");
   }
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        
