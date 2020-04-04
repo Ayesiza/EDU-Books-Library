@@ -22,14 +22,31 @@ const users = [
         window.location.replace('./add-book.html')
     }
     if(user.role === 'student' && user.password === password){
-        window.location.replace('./dashboad.html')
+        window.location.replace('./userbooks.html')
     }
     if(user.role === 'edustaff' && user.password === password){
-        window.location.replace('./dashboad.html')
+        window.location.replace('./books.html')
     }
 
   });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
   

@@ -8,19 +8,39 @@ document.getElementById('myform').addEventListener("submit", event => {
   
   if (name.length < 1 )  {
     document.getElementById('helper-text').innerHTML =
-      "All fields are required";
+      "All fields are required ";
   }
-  if (email.length < 4 ) {
-    document.getElementById('helper-text').innerHTML =
-     "Email must contain at least one special character (@ &.)!";
-  } 
-     if (password.length < 4 ) {
-    document.getElementById('helper-text').innerHTML =
-     "Password must contain at least one uppercase letter (A-Z)!";
-  } 
-  else {
-    window.location.replace("./login.html");
-  }
+  if(name.length < 1 || password < 1){
+    document.getElementById('helper-text').innerHTML=" All field required and password atleast with uppercase letter (A-Z)!";
+}else{
+    window.location.replace('./userbooks.html')
+}
+
+  // if (email.length < 4 ) {
+  //   document.getElementById('helper-text').innerHTML =
+  //    "Email must contain at least one special character (@ &.)!";
+  // } 
+  //    if (password.length < 4 ) {
+  //   document.getElementById('helper-text').innerHTML =
+  //    "Password must contain at least one uppercase letter (A-Z)!";
+  // } 
+  // else {
+  //   window.location.replace("./books.html");
+  // }
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        
