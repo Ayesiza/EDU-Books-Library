@@ -15,23 +15,26 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
+ 
+ });
 
-// filter books
-const searchBar = forms['search-books'].querySelector('input');
-searchBar.addEventListener('keyup', (e) => {
-  const term = e.target.value.toLowerCase();
-  const books = list.getElementsByTagName('h6');
-  Array.from(books).forEach((book) => {
-    const title = book.firstElementChild.textContent;
-    if(title.toLowerCase().indexOf(e.target.value) != -1){
-      book.style.display = 'block';
-    } else {
-      book.style.display = 'none';
+// filter /Search books
+ myBookSearch =()=> {
+    let input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "flex";
+        } else {
+            li[i].style.display = "none";
+        }
     }
-  });
-});
-
-});
+};
 
 
 
