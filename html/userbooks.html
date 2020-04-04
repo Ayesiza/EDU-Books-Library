@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>Document</title>
+
+</head>
+<body class="back-color">
+    <div class="main">
+       
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" >EDu-LIBRARY </a>
+        <a>
+          <img src="../images/local_library-white-18dp.svg " alt="library logo" class="active" style="width:100%">
+        </a>
+        
+        <a href="./login.html">Dashboad</a>
+        <div class="logins">
+          <a href="./login.html">Login</a>   
+        </div>
+    </div>
+        <h4 class="ml-4 mt-2">Edu-Books</h4>
+        <input type="text" id="myInput" class="" onkeyup="myBookSearch()" placeholder="Search for a book..." title="Type in a name">
+        <div class="container p-4">
+            <ul id="myUL">
+                <div class="row">
+                    <div class="col-sm-4 mb-3">
+                        <li><a href="#">Technology: GitControl </a>  
+                            <div class=" card" > 
+                                <img class="img-fluid" src="../images/book1.jpg" alt="technology book1">
+                                <button id="myBtn"class="mode-button">Borrow</button>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <li><a href="#">Math: PureMath</a>
+                            <div class="card">   
+                                <img class="img-fluid" src="../images/candle.jpg" alt="candle booK">
+                                <button id="myBtn"class="mode-button">Borrow</button>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <li><a href="#">Science: The moon</a>
+                            <div class="card">
+                                <img class="img-fluid" src="../images/candle.jpg" alt="technology book1">
+                                <button id="myBtn"class="mode-button">Borrow</button>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 mb-3">
+                        <li><a href="#">Tech: Mockups</a>
+                            <div class="card">
+                                 <img class="img-fluid" src="../images/book1.jpg" alt="technology book1">
+                                 <button id="myBtn"class="mode-button">Borrow</button>
+                                </div>
+                        </li>
+                    </div>
+               
+                    <div class="col-sm-4 mb-3">
+                        <li><a href="#">Technology: Bootstrap </a>
+                            <div class="card">
+                                <img class="img-fluid" src="../images/book1.jpg" alt="technology book1">
+                                <button id="myBtn"class="mode-button">Borrow</button>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <li><a href="#">Math: Algebra</a>
+                            <div class="card">
+                                <img class="img-fluid" src="../images/candle.jpg" alt="candle booK">
+                                <button id="myBtn"class="mode-button">Borrow</button>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 mb-3">
+                        <li><a href="#">Science: Velocity</a>
+                            <div class="card">   
+                                <img class="img-fluid" src="../images/candle.jpg" alt="technology book1">
+                                <button id="myBtn"class="mode-button">Borrow</button>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <li><a href="#">Tecnology: Javasript</a>
+                            <div class="card"> 
+                                <img class="img-fluid" src="../images/book1.jpg" alt="technology book1">
+                                <button id="myBtn"class="mode-button">Borrow</button>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <li><a href="#">Science: Velocity</a>
+                            <div class="card">
+                                <img class="img-fluid" src="../images/candle.jpg" alt="technology book1">
+                                <button id="myBtn"class="mode-button">Borrow</button>
+                            </div>
+                        </li>
+                </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+
+        <div class="container ">
+          <div class="modal-content col-md-8">
+          <span class="close">&times;</span>
+          <div class="book-wrapp">
+            <div class="box">
+              <div class="book-img">
+                <img src="../images/book1.jpg" width="100%" alt="mockup" />
+              </div>
+              <div class="book-info">
+                <h1>Mockup</h1>
+                <p class="author"> Micheal Garben</p>
+                
+                <p class="description">A full description on stadard mocups.</p>
+                
+              
+                <button class="avail-btn blinking">Availabe</button>
+                <button class="avail-btn">Borrowed</button>
+            
+              </div>
+            </div>
+          </div> 
+      </div>
+      </div>
+      </div>
+    <script src="../assets/js/books.js">
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
