@@ -1,9 +1,11 @@
 const form = document.getElementById('addForm');
 const itemList = document.getElementById('books');
+const filter = document.getElementById('filter');
 
 form.addEventListener('submit', addItem);
 itemList.addEventListener('click', removeItem);
-
+// Filter event
+filter.addEventListener('keyup', filterItems);
 
 function addItem(e){
   e.preventDefault();
@@ -30,4 +32,17 @@ function removeItem(event){
   }
 };
 
+// search books
+function filterItems(e){
+  let text = e.target.value.toLowerCase();
+  let items = itemList.getElementsByTagName('li');
+  Array.from(items).forEach(function(item){
+    let itemName = item.firstChild.textContent;
+    if(itemName.toLowerCase().indexOf(text) != -1){
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+};
 
