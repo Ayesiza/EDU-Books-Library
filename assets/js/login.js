@@ -2,7 +2,7 @@
 const users = [
     { name: "jane", email: "jane@gmail.com", role: "LF", password:'kampala' },
     { name: "hawa", email: "hawa@gmail.com", role: "student", password:'kampala'},
-    { name: "swai", email: "swai@gmail.com", role: "edustaff", password:'kampala'}
+    { name: "solomon", email: "solomon@gmail.com", role: "edustaff", password:'kampala'}
   ];
 
   document.getElementById("myrole").addEventListener("submit", event => {
@@ -22,10 +22,10 @@ const users = [
         window.location.replace('./add-book.html')
     }
     if(user.role === 'student' && user.password === password){
-        window.location.replace('./userbooks.html')
+        window.location.replace('./dashboard.html')
     }
-    if(user.role === 'edustaff' && user.password === password){
-        window.location.replace('./books.html')
+    if(user.role === 'Edu-Staff' && user.password === password){
+        window.location.replace('./dashboard.html')
     }
 
   });
