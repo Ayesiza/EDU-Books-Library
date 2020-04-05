@@ -5,7 +5,7 @@ body {
 .main {
   max-width: 1000px;
   margin: auto;
-  background-color: #719cc4;
+  background-color: #a6b1e1;
 }
 
 .wrapper {
@@ -52,8 +52,16 @@ footer {
   color: #ebe4f8;
 }
 
+
+img:hover {
+    transform: scale(1.09);
+    
+
+  }
 img {
+  transition: all 0.5s linear;
   width: 100%;
+  cursor: pointer;
 }
 /* navigation bar css */
 .topnav {
@@ -111,7 +119,7 @@ img {
 /* ### navigation bar ends */
 /* signup form */
 .form-wrap {
-  margin: 20px;
+  margin: 40px;
   width: 350px;
   height: auto;
   padding: 30px;
@@ -331,7 +339,6 @@ form.search::after {
 }
 
 /* search and filter*/
-
 #myInput {
   margin-left: 16px;
   background-repeat: no-repeat;
