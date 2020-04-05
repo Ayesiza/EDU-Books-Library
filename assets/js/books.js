@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     // model
 const modal = document.getElementById("myModal");
-const btn = document.getElementById("myBtn");
+const btn = document.getElementById("myBook");
 const span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
   modal.style.display = "block";
@@ -36,6 +36,10 @@ myBooks=()=> {
       }
     }       
   }
+};
+
+changeStatus=(id) =>{
+  id.innerHTML = "Borrowed";
 };
 
 

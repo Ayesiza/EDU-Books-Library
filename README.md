@@ -20,7 +20,7 @@ EDU LF should be able to add a new book to the library.
  https://www.pivotaltracker.com/n/projects/2440488
 
 ## gh-pages link
-
+https://ayesiza.github.io/EDU-Books-Library/
 
 ## Technologies Used
   HTML
@@ -35,4 +35,4 @@ EDU LF should be able to add a new book to the library.
 
 ### Acknowledgments
  
- Our thanks goes to Our Team LF Jane Zaluwango, other LFs and Team Strap members
+ Our thanks goes to Our Team LF Jane Zaluwango, other LFs and Team Strap members2
