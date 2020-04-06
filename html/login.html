@@ -1,65 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
     <title>Edu-Book Library</title>
-  </head>
-  <body>
-    <div class="container-fluid  back-color">
-      <div class="container">
-        
-      <div class="topnav" id="myTopnav">
-        <a href="../index.html" >EDu-LIBRARY </a>
-        <a>
-          <img src="../images/local_library-white-18dp.svg " alt="library logo" class="active" style="width:100%">
-        </a>
-        <a href="#">About Us</a>
-        
-        <div class="logins">
-          <a href="./userbooks.html">Login</a>   
-        </div>
-    </div>
-        <div class="container-fluid d-flex justify-content-center wrapper">
-          <form class="form-wrap" id="myrole" action="/index.html">
-            <h6>LOGIN</h6>
-            <h6>Fill in to login to account</h6>
-            <hr />
-            <small
-              id="helper-text"
-              style="color: red; display: block; width: 100%;"
-            ></small>
-            <select id="myrole" class="formInput" name="role">
-                <option disabled>Role</option>
-                <option value="Student">student</option>
-                <option value="LF">LF</option>
-                <option value="Edu-Staff">Edu-Staff</option>
-              </select>
-            <input
-              class="formInput"
-              type="email"
-              id="email"
-              placeholder="Email:"
-              
-            />
-            <input
-              class="formInput"
-              type="password"
-              id="password"
-              placeholder="Password:"
-              
-            />
-            <span class="pwd-reset">Forgot your password?</span>
-            <div class="d-flex justify-content-center pt-2 pb-2">
-              <button class="auth-button" id="button" value="submit" type="submit">LOGIN</button>
+</head>
+
+<body class=" back-color">
+    <div class="main">
+            <div class="topnav" id="myTopnav">
+                <a href="../index.html">EDu-LIBRARY </a>
+                <a>
+                    <img src="../images/local_library-white-18dp.svg " alt="library logo" class="active" style="width:100%">
+                </a>
+                <a href="#">About Us</a>
+
+                <div class="logins">
+                    <a href="./userbooks.html">Login</a>
+                </div>
             </div>
-            <span>
+            <div class="container mt-4  mb- 4 d-flex justify-content-center wrapper">
+                <form class="form-wrap" id="myrole" action="/index.html">
+                    <h6>LOGIN</h6>
+                    <h6>Fill in to login to account</h6>
+                    <hr />
+                    <small id="helper-text" style="color: red; display: block; width: 100%;"></small>
+                    <select id="myrole" class="formInput" name="role">
+                        <option disabled>Role</option>
+                        <option value="Student">student</option>
+                        <option value="LF">LF</option>
+                        <option value="Edu-Staff">Edu-Staff</option>
+                    </select>
+                    <input class="formInput" type="email" id="email" placeholder="Email:" />
+                    <input class="formInput" type="password" id="password" placeholder="Password:" />
+                    <span class="pwd-reset">Forgot your password?</span>
+                    <div class="d-flex justify-content-center pt-2 pb-2">
+                        <button class="auth-button" id="button" value="submit" type="submit">LOGIN</button>
+                    </div>
+                    <span>
               Are you new?
               <a href="./signup.html" id="show-signup"> Signup </a></span
             >
@@ -73,28 +55,10 @@
             <a href=""><i class="fa fa-github"></i></a>
           </p>
         </footer>
-      </div>
+      
     </div>
-   
+
     <script src="../assets/js/login.js"></script>
      <script src="../assets/js/app.js"></script> 
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
