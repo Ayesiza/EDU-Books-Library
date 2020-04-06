@@ -24,7 +24,7 @@ https://ayesiza.github.io/EDU-Books-Library/
 
 ## Technologies Used
   HTML
-  CSs 
+  CSS 
 ## Languages
  Javascript
 
@@ -35,4 +35,4 @@ https://ayesiza.github.io/EDU-Books-Library/
 
 ### Acknowledgments
  
- Our thanks goes to Our Team LF Jane Zaluwango, other LFs and Team Strap members2
+ Our thanks goes to Our Team LF Jane Zaluwango, other LFs and Team Strap members

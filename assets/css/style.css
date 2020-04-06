@@ -6,6 +6,7 @@ body {
 .main {
   max-width: 1000px;
   margin: auto;
+  
   background-color: #a6b1e1;
 }
 
@@ -20,6 +21,7 @@ h4 {
 
 .side-div {
   background-color: #ebe4f8;
+  overflow: hidden;
 }
 
 p {
@@ -41,10 +43,10 @@ footer {
 .blue-btn {
   background-color: #1c1a89;
   color: #ebe4f8;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border-radius: 5px;
   border: hidden;
-  font-size: larger;
+  font-size: bolder;
   cursor: pointer;
 }
 
@@ -120,9 +122,9 @@ img {
 /* ### navigation bar ends */
 /* signup form */
 .form-wrap {
-  margin: 40px;
+  margin: 50px;
   width: 350px;
-  height: auto;
+  
   padding: 30px;
   background-color: #eff6f8;
   border-radius: 10px;
