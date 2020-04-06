@@ -1,35 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
-#myTable {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 18px;
-}
-
-#myTable th, #myTable td {
-  text-align: left;
-  padding: 12px;
-}
-
-#myTable tr {
-  border-bottom: 1px solid #ddd;
-}
-
-#myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
-}
-</style>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-   <link rel="stylesheet" href="../assets/css/style.css" />
-   <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Landing Page, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <title>Edu-Library</title>
 </head>
-<body class="back-color">
-    <div class="main">    
+<body class="back-color" >
+    
+  <div class="main ">    
         <div class="topnav" id="myTopnav">
           <a href="../index.html" >EDu-LIBRARY </a>
           <a>
@@ -37,141 +18,94 @@
           </a>
           <a href="./viewall.html">Books</a>
             <div class="logins">
+              <a href="./login.html">Add a Book</a>   
             <a href="../index.html">Logout</a>   
           </div>
       </div>
-
-      <div class="container p-4">   
-<h2>Edu-Books</h2>
-
-<input type="text" id="myInput" onkeyup="myBooks()" placeholder="Search Books by title.." title="Type book title">
-<div class="row">
-    <div class="col-md-1">
-    </div>
   
-    <div class="col-md-6">
-<table id="myTable">
+   
     
-  <tr class="header">
-    <th >Book Tittle</th>
-    <th style="width:40%;">Category</th>
-  </tr>
-  <tr>
-    <td>Mockup
-        <div class=" card" > 
-            <img class="img-fluid" src="../images/book1.jpg" alt="technology book1">
-            <button id="myBtn"class="mode-button">Borrow</button>
-        </div>
-    </td>
-    <td>
-        Technology
-    </td>
-  </tr>
-  <tr>
-    <td>To The moon
-        <div class="card">   
-            <img class="img-fluid" src="../images/images (4).jpg" alt="candle booK">
-            <button id="myBtn"class="mode-button">Borrow</button>
-        </div>
-    </td>
-    <td>Science</td>
-  </tr>
-  <tr>
-    <td>PureMath
-        <div class="card">   
-            <img class="img-fluid" src="../images/freeon.jpg" alt="candle booK">
-            <button id="myBtn"class="mode-button">Borrow</button>
-        </div>
-    </td>
-    <td>Mathematics</td>
-  </tr>
-  <tr>
-    <td>Sequalize
-        <div class=" card" > 
-            <img class="img-fluid" src="../images/book1.jpg" alt="technology book1">
-            <button id="myBtn"class="mode-button">Borrow</button>
-        </div>
-    </td>
-    <td>
-        Technology
-    </td>
-  </tr>
-  <tr>
-    <td>React
-        <div class=" card" > 
-            <img class="img-fluid" src="../images/book1.jpg" alt="technology book1">
-            <button id="myBtn"class="mode-button">Borrow</button>
-        </div>
-    </td>
-    <td>
-        Technology
-    </td>
-  </tr>
-  <tr>
-    <td>Algebra
-        <div class="card">   
-            <img class="img-fluid" src="../images/freeon.jpg" alt="candle booK">
-            <button id="myBtn"class="mode-button">Borrow</button>
-        </div>
-    </td>
-    <td>Mathematics</td>
-  </tr>
-  <tr>
-    <td>Probability
-        <div class="card">   
-            <img class="img-fluid" src="../images/freeon.jpg" alt="candle booK">
-            <button id="myBtn"class="mode-button">Borrow</button>
-        </div>
-    </td>
-    <td>Mathematics</td>
-  </tr>
-  <tr>
-    <td>Chemical Formulars
-        <div class="card">   
-            <img class="img-fluid" src="../images/images (4).jpg" alt="candle booK">
-            <button id="myBtn"class="mode-button">Borrow</button>
-        </div>
-    </td>
-    <td>Science</td>
-  </tr>
-  <tr>
-    <td>Nutrition Science
-        <div class="card">   
-            <img class="img-fluid" src="../images/images (4).jpg" alt="candle booK">
-            <button id="myBtn"class="mode-button">Borrow</button>
-        </div>
-    </td>
-    <td>Science</td>
-  </tr>
-</table>
+    <form class="search"style="margin:auto;max-width:300px" >
+      <input type="text" id="myInput" onkeyup="myBooks()" placeholder="Search Book Category.." title="Type category">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    
+<div class="container p-4">
+    <div  >
+            <table id="myTable"  class="table ">
+          <div>   
+                <tr>
+                  <td >
+                    <div class="card">
+                    Science:Nutrition
+                    <img  id="myBook" class="img-fluid"src="../images/book1.jpg" >
+                    <button id="myBtn" class="mode-button" onclick="changeStatus(this)">Borrow</button>
+                  </div>
+                  </td>
+                  <td >
+                    <div class="card">
+                    Science: TheMoon
+                    <img class="img-fluid" src="../images/book1.jpg" >
+                    <button id="myBtn" class="mode-button" onclick="changeStatus(this)">Borrow</button>
+                    </div>
+                  </td>
+                  <td >
+                    <div class="card">
+                    Science:Chemistry
+                    <img class="img-fluid" src="../images/book1.jpg" >
+                    <button id="myBtn" class="mode-button"onclick="changeStatus(this)">Borrow</button>
+                    </div>
+                  </td>
+                  <td >
+                    <div class="card">
+                    Tech:Reprod 
+                    <img class="img-fluid" src="../images/book1.jpg" >
+                    <button id="myBtn" class="mode-button"onclick="changeStatus(this)">Borrow</button>
+                  </div>
+                  </td>
+                  <br> 
+                </tr>
+               
+              <br>
+     </div> 
+    <div>
+                <tr>
+                  <td >
+                    <div class="card">
+                    Tech:Sequalize
+                    <img class="img-fluid" src="../images/freeon.jpg">
+                    <button id="myBtn"class="mode-button"onclick="changeStatus(this)">Borrow</button>
+                  </div>
+                  </td>
+                  <td >
+                    <div class="card">
+                    Tech:React
+                    <img class="img-fluid" src="../images/freeon.jpg" >
+                    <button id="myBtn"class="mode-button"onclick="changeStatus(this)">Borrow</button>
+                  </div>
+                  </td>
+                  <td >
+                    <div class="card">
+                    Tech:Mockup
+                    <img class="img-fluid" src="../images/freeon.jpg">
+                    <button id="myBtn"class="mode-button"onclick="changeStatus(this)">Borrow</button>
+                  </div>
+                  </td>
+                  <td >
+                    <div class="card">
+                    Tech:Evironments
+                    <img class="img-fluid" src="../images/freeon.jpg" >
+                    <button id="myBtn"class="mode-button"onclick="changeStatus(this)">Borrow</button>
+                  </div>
+                  </td>
+                </tr>
+                <br>        
     </div>
-    <div class="col-md-4">
-      <div class="pt-4">
-          <h4>Book Categories:</h4>
-      </div>
-      <div>
-          <p>Technology</p>
-          <p>Mathematics</p>
-          <p>Science</p>
-      </div>
-      <div>
-          <img src="../images/candle.jpg" alt="Life of the Candle Book"style="width:100%" >
-      </div>
-  
-</div>
-    <div class="col-md-1">
-    </div> 
+  </table>
 </div>
       </div>
-      <footer class="container text-center">
-        <p> <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-github"></i></a>
-        </p>
-</footer>
-    </div>
-    <div id="myModal" class="modal">
+
+        <div id="myModal" class="modal">
 
         <div class="container ">
           <div class="modal-content col-md-8">
@@ -184,50 +118,17 @@
               <div class="book-info">
                 <h1>Mockup</h1>
                 <p class="author"> Micheal Garben</p>
-                <p class="description">A full description on stadard mocups.</p>
+                <p class="description">A full description on stadard mockups.</p>
                 <button class="avail-btn blinking">Availabe</button>
-                <button class="avail-btn">Borrowed</button>
-            
+                         
               </div>
             </div>
           </div> 
       </div>
       </div>
-      </div>
-    <script src="../assets/js/books.js">
-    </script>
-
+      </div> 
+     
+      <script src="../assets/js/books.js">
+      </script>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html> 
