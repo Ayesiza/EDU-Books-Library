@@ -5,8 +5,8 @@ EDU-Book Library is a platform where students who like reading pick different bo
 ## Required Features
 1. Users can create an account and log in.
 2. All users can see available books in the library.
-Books belong to particular categories ie Technology, Science,Mathematics etc.
-EDU LF should be able to add a new book to the library.
+3. Books belong to particular categories ie Technology, Science,Mathematics etc.
+4. EDU LF should be able to add a new book to the library.
 5. Only an EDU student, EDU LF and a EDU staff member are eligible to take a book from the Library.
 6. Only the EDU LF should be able to delete a book.
 
@@ -20,7 +20,7 @@ EDU LF should be able to add a new book to the library.
  https://www.pivotaltracker.com/n/projects/2440488
 
 ## gh-pages link
-
+https://ayesiza.github.io/EDU-Books-Library/
 
 ## Technologies Used
   HTML
@@ -35,4 +35,4 @@ EDU LF should be able to add a new book to the library.
 
 ### Acknowledgments
  
- Our thanks goes to Our Team LF Jane Zaluwango, other LFs and Team Strap members
+ Our thanks goes to Our Team LF Jane Zaluwango, other LFs and Team Strap members2

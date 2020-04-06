@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Tahoma;
+  
 }
 .main {
   max-width: 1000px;
@@ -54,12 +55,12 @@ footer {
 
 
 img:hover {
-    transform: scale(1.09);
+    transform: scale(1.01);
     
 
   }
 img {
-  transition: all 0.5s linear;
+  transition: all 0.1s linear;
   width: 100%;
   cursor: pointer;
 }
@@ -238,42 +239,38 @@ hr {
   color: white;
 }
 form.search input[type="text"] {
-  padding: 5px;
-  font-size: 17px;
-  border: 1px solid grey;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dbeaf1;
   float: left;
-  width: 60%;
-  background: #f1f1f1;
-  margin-top: -20px;
+  width: 80%;
+  background: #dbeaf1;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+
+ 
 }
 
 form.search button {
+  margin-top: 20px;
   float: left;
-  width: 20%;
-  padding: 5px;
+  width:10%;
+  padding: 10px  0px;
   background: #1c1a89;
   color: white;
   font-size: 17px;
-  border: 1px solid grey;
+  border: none;
   border-left: none;
   cursor: pointer;
-  margin-top: -20px;
+  
 }
 
 form.search button:hover {
   background: #0b7dda;
 }
 
-form.search::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.search {
-  margin-top: 0px;
-  margin-right: 20px;
-  float: right;
-}
+
 /* model */
 .modal {
   display: none; 
@@ -285,7 +282,6 @@ form.search::after {
   width: 100%; 
   height: 100%; 
   overflow: auto; 
-  background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
 }
 
@@ -339,16 +335,7 @@ form.search::after {
 }
 
 /* search and filter*/
-#myInput {
-  margin-left: 16px;
-  background-repeat: no-repeat;
-  width: 50%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-  border-radius: 10px;
-}
+
 
 #myUL {
   list-style-type: none;
@@ -359,7 +346,7 @@ form.search::after {
 #myUL li a {
   border: 1px solid #ddd;
   margin-top: -1px; 
-  background-color: #f6f6f6;
+  background-color: #dbeaf1;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
